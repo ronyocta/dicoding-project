@@ -10,8 +10,9 @@ st.set_page_config(page_title="Bicycle Rental", page_icon=":bar_chart:", layout=
 st.title(":bar_chart: Sample Bicycle Rental EDA")
 st.markdown("<style>div.block-container{padding-top:1rem;}</style>", unsafe_allow_html=True)
 
-url = "https://github.com/ronyocta/dicoding-project/blob/67c12a3619a9804b8c217247191622cacd4c1f3e/Dashboard/main_data.csv"
-df = pd.read_csv(url, encoding="ISO-8859-1")
+url = "https://raw.githubusercontent.com/ronyocta/dicoding-project/master/Dashboard/main_data.csv"
+df = pd.read_csv(url)
+
 
 df["dteday"] = pd.to_datetime(df["dteday"])
 
