@@ -65,3 +65,5 @@ st.plotly_chart(fig2, use_container_width=True)
 st.subheader("Download Original Dataset")
 csv = df.to_csv(index=False).encode("utf-8")
 st.download_button("Download Data", data=csv, file_name="Bicycle Dataset", mime="text/csv")
+
+st.caption('Copyright (C) Rony Octavia Rahardjo, ST. 2023')
